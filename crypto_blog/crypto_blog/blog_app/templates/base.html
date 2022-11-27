@@ -1,7 +1,7 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,18 +12,37 @@
     <title>Blog</title>
 </head>
 <body>
-    <main class="main-container">
-        <header>
-            <nav class="nav-items">
-                <ul class="nav-list-items">
-                    <li>Education</li>
-                    <li>Tools</li>
-                    <li>DeFi</li>
-                    <li>Gamble</li>
+    <header class="header">
+        <div class="container container--wide">
+        <!-- <img class="logo" src="img/omnifood-logo.png" alt="Omnifood logo"> -->
+        <div class="header-row">
+            <nav class="main-nav">
+                <ul class="main-nav-list">
+                    <li><a class="main-nav-link" href="#">Education</a></li>
+                    <li><a class="main-nav-link" href="#">Investing</a></li>
+                    <li><a class="main-nav-link" href="#">DeFi</a></li>
+                    <li><a class="main-nav-link" href="#">Gamble</a></li>
                 </ul>
-                <input type="text" placeholder="Search..">
             </nav>
-        </header>
+                <form class="form-search">
+                    <label class="form-label">
+                        <i class="icon-search">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                            </svg>
+                        </i>
+                        <input name="search-keyword" type="search">
+                    </label>
+                </form>
+            </div>
+    
+            <!-- <button class="btn-mobile-nav">
+                <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+                <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+            </button> -->
+        </div>
+    </header>
+    <main class="main-container">
         <div class="container">
             {% block content %}
             {% endblock %}

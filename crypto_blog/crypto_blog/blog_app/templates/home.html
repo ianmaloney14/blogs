@@ -1,13 +1,18 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="conatiner">
-    <h1>Post</h1>
-    <ul>
-    {% for post in object_list %}
-        <li><a href="{% url 'article-detail' post.pk %}">{{ post.title }}</a> - {{ post.author.first_name }} {{ post.author.last_name }}<br/>
-        {{ post.body }}</li>
-    {% endfor %}
-    </ul>
+<div class="container">
+    <section class="section-post">
+        <h1>Post</h1>
+        <div class="post-items-list">
+            <ul>
+            {% for post in object_list %}
+                <li class="post-list"><a href="{% url 'article-detail' post.pk %}">{{ post.title }}</a> - <span>{{ post.author.first_name }}</span> <span>{{ post.author.last_name }}</span><br/>
+                    <p>{{ post.body }}</p>
+                </li>
+            {% endfor %}
+            </ul>
+        </div>
+    </section>
 </div>
 {% endblock %}
