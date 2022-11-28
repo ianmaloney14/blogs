@@ -22,6 +22,7 @@
                     <li><a class="main-nav-link" href="#">Investing</a></li>
                     <li><a class="main-nav-link" href="#">DeFi</a></li>
                     <li><a class="main-nav-link" href="#">Gamble</a></li>
+                    <li><a class="main-nav-link nav-cta" href="#">Best Cyrpto Tools</a></li>
                 </ul>
             </nav>
                 <form class="form-search">
@@ -43,10 +44,68 @@
         </div>
     </header>
     <main class="main-container">
-        <div class="container">
-            {% block content %}
-            {% endblock %}
-        </div>
+        {% block content %}
+        {% endblock %}
     </main>
+
+    <footer class="footer">
+        <div class="container grid grid--4-cols grid--footer">
+            <div class="logo-col">
+                <p class="footer-heading">About CryptoVerse</p>
+                <a class="footer-logo" href="#">
+                    {% load static %}<img class="logo" src="{% static "img/omnifood-logo.png" %}" alt="image not found">
+                </a>
+                <p class="about">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, recusandae, eum doloribus, error rerum magni aut dignissimos beatae dolorum fugiat maxime facere dolores odit rem sequi harum similique quas ducimus.</p>
+                <ul class="social-links">
+                    <li class="social-link">
+                        <a class="footer-link" href="#"><ion-icon class="social-icons" name="logo-twitter"></ion-icon></a>
+                    </li>
+                    <li class="social-link">
+                        <a class="footer-link" href="#"><ion-icon class="social-icons" name="logo-linkedin"></ion-icon></a>
+                    </li>
+                    <li class="social-link">
+                        <a class="footer-link" href="#"><ion-icon class="social-icons" name="mail"></ion-icon></a>
+                    </li>
+                </ul>
+                <p class="copyright">Copyright &copy; 2027, Inc. Allrights reserved</p>
+            </div>
+            <nav class="nav-col">
+                <p class="footer-heading">Best Resources</p>
+                <ul class="footer-nav">
+                    <li><a class="footer-link" href="#">Blockchain for dummies</a></li>
+                    <li><a class="footer-link" href="#">Best ways to buy bitcoin</a></li>
+                    <li><a class="footer-link" href="#">Best crypto betting sites</a></li>
+                    <li><a class="footer-link" href="#">Best lending sites</a></li>
+                    <li><a class="footer-link" href="#">Investing Tips</a></li>
+                </ul>
+            </nav>
+            <nav class="useful-links-col">
+                <p class="footer-heading">Useful Links</p>
+                <ul class="footer-nav">
+                    <li><a class="footer-link" href="#">About</a></li>
+                    <li><a class="footer-link" href="#">Infographics</a></li>
+                    <li><a class="footer-link" href="#">Crypto Guides</a></li>
+                    <li><a class="footer-link" href="#">Best Crypto Products</a></li>
+                    <li><a class="footer-link" href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <nav class="resources-col">
+                <p class="footer-heading">Resources</p>
+                <ul class="footer-nav">
+                    <li><a class="footer-link" href="#">Disclaimer</a></li>
+                    <li><a class="footer-link" href="#">Terms of Use</a></li>
+                    <li><a class="footer-link" href="#">Terms of service</a></li>
+                    <li><a class="footer-link" href="#">Copyright Notice</a></li>
+                    <li><a class="footer-link" href="#">Privacy Policy</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- <div class="container grid grid--2-cols">
+            <p class="copyright">Copyright &copy; 2027, Inc. Allrights reserved</p>
+        </div> -->
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
