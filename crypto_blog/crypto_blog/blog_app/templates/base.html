@@ -14,15 +14,17 @@
 <body>
     <header class="header">
         <div class="container container--wide">
-        <!-- <img class="logo" src="img/omnifood-logo.png" alt="Omnifood logo"> -->
         <div class="header-row">
+            <a class="logo" href="#">
+                {% load static %}<img class="logo" src="{% static "img/omnifood-logo.png" %}" alt="image not found">
+            </a>
             <nav class="main-nav">
                 <ul class="main-nav-list">
                     <li><a class="main-nav-link" href="#">Education</a></li>
                     <li><a class="main-nav-link" href="#">Investing</a></li>
                     <li><a class="main-nav-link" href="#">DeFi</a></li>
                     <li><a class="main-nav-link" href="#">Gamble</a></li>
-                    <li><a class="main-nav-link nav-cta" href="#">Best Cyrpto Tools</a></li>
+                    <li><a class="main-nav-link nav-cta" href="#">Cyrpto Tools</a></li>
                 </ul>
             </nav>
                 <form class="form-search">

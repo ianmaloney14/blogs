@@ -8,11 +8,23 @@
             <h3 class="heading-secondary">With Expert Recommendations</h3>
         </div>
         <div class="hero-nav-items">
-            <ul class="hero-nav-item-list">
-                <li class="hero-nav-item-link" href="#"><a>Education &rarr;</a></li>
-                <li class="hero-nav-item-link" href="#"><a>Investing &rarr;</a></li>
-                <li class="hero-nav-item-link" href="#"><a>DeFi &rarr;</a></li>
-                <li class="hero-nav-item-link" href="#"><a>Gambling &rarr;</a></li>
+            <ul class="hero-nav-item-list grid grid--4-cols">
+                <li class="hero-nav-item">
+                    <ion-icon class="nav-icon" name="library"></ion-icon>
+                    <a class="hero-nav-item-link" href="#">Education &rarr;</a>
+                </li>
+                <li class="hero-nav-item">
+                    <ion-icon class="nav-icon" name="wallet"></ion-icon>
+                    <a class="hero-nav-item-link" href="#">Investing &rarr;</a>
+                </li>
+                <li class="hero-nav-item">
+                    <ion-icon class="nav-icon" name="globe"></ion-icon>
+                    <a class="hero-nav-item-link" href="#">DeFi &rarr;</a>
+                </li>
+                <li class="hero-nav-item">
+                    <ion-icon class="nav-icon" name="sparkles"></ion-icon>
+                    <a class="hero-nav-item-link" href="#">Gambling &rarr;</a>
+                </li>
             </ul>
         </div>
     </div>
@@ -25,6 +37,7 @@
         </h2>
     </div>
     <div class="container grid grid--3-cols">
+
         <div class="post">
             {% load static %}<img class="post-img" src="{% static "img/image-not-found-scaled.png" %}" alt="image not found">
             <div class="post-content">

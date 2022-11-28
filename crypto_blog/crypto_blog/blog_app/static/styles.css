@@ -105,14 +105,15 @@ body {
     line-height: 1.05;
     letter-spacing: -0.5px;
     color: #fff;
+    margin-bottom: 2.4rem;
 }
 
 .heading-secondary {
     font-size: 3.6rem;
     font-weight: 700;
-    line-height: 1.05;
+    line-height: 1.1;
     color: #fff;
-    margin-bottom: 4.8rem;
+    margin-bottom: 8rem;
 }
 
 .margin-right-sm {
@@ -248,14 +249,18 @@ body {
 
 .hero-nav-item-list {
     list-style: none;
-    display: flex;
+}
+
+.hero-nav-item {
+    background-color: #212529;
+    border-radius: 9px;
 }
 
 .hero-nav-item-link {
     font-size: 2rem;
     line-height: 1.6;
     color: #fff;
-    margin-bottom: 4.8rem;
+    padding: 0 3.2rem 3.2rem 3.2rem;
 }
 
 .hero-nav-item-link:link,
@@ -273,6 +278,16 @@ body {
 .hero-nav-item-link:active {
     color: #228be6;
 }
+
+.nav-icon {
+    display: block;
+    height: 4.8rem;
+    width: 4.8rem;
+    padding: 3.2rem;
+    color: #228be6;
+}
+
+
 
 
 /* ******************************** */
