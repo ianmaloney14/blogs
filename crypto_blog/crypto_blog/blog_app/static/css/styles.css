@@ -8,7 +8,8 @@
 
 .container--wide {
     width: 142rem;
-    max-width: 100%;
+    max-width: 100% !important;
+    padding: 0 !important;
 }
 
 .header {
@@ -247,6 +248,22 @@
 .post-title a {
     text-decoration: none;
     color: #333;
+}
+
+.post-title-link:link,
+.post-title-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #141a1f;
+    font-weight: 500;
+    font-size: 2rem;
+    transition: all 300ms;
+    cursor: pointer;
+}
+
+.post-title-link:hover,
+.post-title-link:active {
+    color: #228be6;
 }
 
 .post-attributes {

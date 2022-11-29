@@ -8,9 +8,6 @@ class HomeView(ListView):
     # ordering = ['-id']
     ordering = ['-created_at']
 
-# def home(request):
-#     post_list = Post.objects.all()
-#     return render(request, 'home.html', {'post_list': post_list})
 
 class ArticleDetailView(DetailView):
     model = Post
