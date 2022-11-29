@@ -8,15 +8,17 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'styles.css' %}">
+    {% load static %}
+    <script src=" {% static '/js/script.js' %} " type="text/javascript"></script>
 
     <title>Blog</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header sticky">
         <div class="container container--wide">
         <div class="header-row">
             <a class="logo" href="{% url 'home' %}">
-                {% load static %}<img class="logo" src="{% static "img/omnifood-logo.png" %}" alt="image not found">
+                {% load static %}<img class="logo" src="{% static "img/cryptoverse_test_logo.png" %}" alt="image not found">
             </a>
             <nav class="main-nav">
                 <ul class="main-nav-list">
@@ -55,7 +57,7 @@
             <div class="logo-col">
                 <p class="footer-heading">About CryptoVerse</p>
                 <a class="footer-logo" href="{% url 'home' %}">
-                    {% load static %}<img class="logo" src="{% static "img/omnifood-logo.png" %}" alt="image not found">
+                    {% load static %}<img class="logo" src="{% static "img/cryptoverse_test_logo.png" %}" alt="image not found">
                 </a>
                 <p class="about">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, recusandae, eum doloribus, error rerum magni aut dignissimos beatae dolorum fugiat maxime facere dolores odit rem sequi harum similique quas ducimus.</p>
                 <ul class="social-links">

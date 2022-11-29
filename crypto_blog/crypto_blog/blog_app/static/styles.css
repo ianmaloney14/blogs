@@ -237,12 +237,29 @@ body {
 }
 
 /* ******************************** */
+/* STICKY NAVIGATION */
+/* ******************************** */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+    height: 8rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    box-shadow: 0 1.2rem 3.2rem (0, 0, 0, 0.03);
+}
+
+/* ******************************** */
 /* HERO SECTION */
 /* ******************************** */
 
 .section-hero {
     background-color: #141a1f;
     padding: 4.8rem 0 9.6rem 0;
+    margin-top: 8rem;
 }
 
 .hero {
