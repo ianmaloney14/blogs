@@ -11,7 +11,14 @@ class Post(models.Model):
     description = models.CharField(max_length=255, default="In this article...")
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now_add=True)
+    category = models.CharField(max_length=255, default="education")
     # thumbnail = models.ImageField()
 
     def __str__(self):
         return self.title + ' | ' + str(self.author)
+
+class Category(models.Model):
+    name = models.CharField(max_length=255)
+
+    def __str__(self):
+        return self.name
