@@ -40,11 +40,13 @@
         {% for post in object_list %}
                 <div class="post">
                 {% if post.thumbnail %}
-                    {% load static %}<img class="post-img" src="{{ post.thumbnail.url }}" alt="image not found">
+                    {% load static %}<img class="post-img" src="{{ post.thumbnail.url }}" alt="article thumbnail">
+                {% else %}
+                    {% load static %}<img class="post-img" src="src="{% static "img/image-not-found-scaled.png" %}" alt="image not found">
                 {% endif %}
                     <div class="post-content">
                         <div class="post-tags">
-                            <span class="tag tag--eductaion">Category</span>
+                            <span class="tag tag--eductaion">{{ post.category }}</span>
                         </div>
                         <p class="post-title"><a class="post-title-link" href="{% url 'article-detail' post.pk %}">{{ post.title }}</a></p>
                         <ul class="post-attributes">
