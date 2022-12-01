@@ -37,7 +37,7 @@
         </h2>
     </div>
     <div class="container grid grid--3-cols">
-        {% for post in object_list %}
+        {% for post in object_list|slice:":9" %}
                 <div class="post">
                 {% if post.thumbnail %}
                     {% load static %}<img class="post-img" src="{{ post.thumbnail.url }}" alt="article thumbnail">
@@ -46,7 +46,7 @@
                 {% endif %}
                     <div class="post-content">
                         <div class="post-tags">
-                            <span class="tag tag--eductaion">{{ post.category }}</span>
+                            <span class="tag tag--gamble">{{ post.category }}</span>
                         </div>
                         <p class="post-title"><a class="post-title-link" href="{% url 'article-detail' post.pk %}">{{ post.title }}</a></p>
                         <ul class="post-attributes">
