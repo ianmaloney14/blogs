@@ -27,14 +27,19 @@
                 {% load static %}<img src="{% static "img/image-not-found-scaled.png" %}">
             </div>
             <div class="about-author">
-                <p>{{ post.post_date }}</p>
+                <p class="line-break italic">Date posted: {{ post.post_date }}</p>
                 <p class="written-by">Written By</p>
                 <span class="author">{{ post.author.first_name }} {{ post.author.last_name }}</span>
-                <p>This is dummy text about the author</p>
-                <br>
-                <hr>
-                <h4>Share Article:</h4>
-                <ul class="social-links">
+                <p class="line-height-large">
+                    This is dummy text about the author. This is dummy text about the author. This is dummy text about the author. This is dummy text about the author.
+                    This is dummy text about the author. This is dummy text about the author. This is dummy text about the author. This is dummy text about the author.
+                    This is dummy text about the author. This is dummy text about the author. This is dummy text about the author. This is dummy text about the author.
+                    This is dummy text about the author. This is dummy text about the author. This is dummy text about the author. This is dummy text about the author.
+                </p>
+                <br class="line-break">
+                <hr class="line-break">
+                <h4 class="heading-h4">Share Article:</h4>
+                <ul class="social-links author-socials">
                     <li class="social-link">
                         <a class="footer-link" href="#"><ion-icon class="social-icons" name="logo-twitter"></ion-icon></a>
                     </li>

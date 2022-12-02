@@ -122,10 +122,26 @@ body {
     margin-bottom: 8rem;
 }
 
+.heading-h4 {
+    font-size: 1.8rem;
+}
+
 .margin-right-sm {
     margin-right: 1.6rem !important;
 }
 
 .font--grey {
     color: #333;
+}
+
+.line-break {
+    margin-bottom: 1.2rem;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.line-height-large {
+    line-height: 1.8;
 }
