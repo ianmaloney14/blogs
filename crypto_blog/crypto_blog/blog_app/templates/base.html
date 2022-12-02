@@ -28,14 +28,38 @@
                 <ul class="main-nav-list">
                     <li class="dropdown" data-dropdown>
                         <a class="main-nav-link link" href="#" data-dropdown-button >Education</a>
-                        <div class="dropdown-menu">
+                        <div class="dropdown-menu dropdown-grid">
                             <div>
-                                <div class="dropdown-heading">
-                                    <div class="dropdown-links">
-                                        <a href="#">All</a>
-                                        <a href="#">All</a>
-                                        <a href="#">All</a>
-                                    </div>
+                                <div class="dropdown-heading"></div>
+                                <div class="dropdown-links">
+                                    <a href="#" class="dropdown-link">What Is Blockchain?</a>
+                                    <a href="#" class="dropdown-link">What Is Bitcoin</a>
+                                    <a href="#" class="dropdown-link">How to Buy Crypto</a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="dropdown-heading"></div>
+                                <div class="dropdown-links">
+                                    <a href="#" class="dropdown-link">Best Crypto Tools</a>
+                                    <a href="#" class="dropdown-link">What to Avoid</a>
+                                    <a href="#" class="dropdown-link">How to Research</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-cards">
+                                <div class="dropdown-card-container">
+                                    {% load static %}<img class="dropdown-card-logo" src="{% static "img/coinbase-logo.png" %}" alt="Coinbase logo">
+                                    <h4 class="heading-h4">Coinbase</h4>
+                                    <a class="main-nav-link nav-cta" href="#">Visit<ion-icon name="arrow-redo-outline"></ion-icon></a>
+                                </div>
+                                <div class="dropdown-card-container">
+                                    {% load static %}<img class="dropdown-card-logo" src="{% static "img/uphold-logo.png" %}" alt="Uphold logo">
+                                    <h4 class="heading-h4">Uphold</h4>
+                                    <a class="main-nav-link nav-cta" href="#">Visit<ion-icon name="arrow-redo-outline"></ion-icon></a>
+                                </div>
+                                <div class="dropdown-card-container">
+                                    {% load static %}<img class="dropdown-card-logo" src="{% static "img/bitrue-logo.png" %}" alt="Bitrue logo">
+                                    <h4 class="heading-h4">Bitrue</h4>
+                                    <a class="main-nav-link nav-cta" href="#">Visit<ion-icon name="arrow-redo-outline"></ion-icon></a>
                                 </div>
                             </div>
                         </div>
