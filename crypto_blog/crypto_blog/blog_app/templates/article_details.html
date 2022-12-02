@@ -3,7 +3,7 @@
 
 {% block content %}
 <section class="section-article">
-    <div class="container grid grid--2-cols-wide">
+    <div class="container">
         <div class="article-content-container">
             <h1 class="heading-primary font--grey">{{ post.title }}</h1>
             <p class="article-content">{{ post.body|safe }}</p>
@@ -28,7 +28,7 @@
             </div>
             <div class="about-author">
                 <p class="line-break italic">Date posted: {{ post.post_date }}</p>
-                <p class="written-by">Written By</p>
+                <p class="written-by italic">Written By</p>
                 <span class="author">{{ post.author.first_name }} {{ post.author.last_name }}</span>
                 <p class="line-height-large">
                     This is dummy text about the author. This is dummy text about the author. This is dummy text about the author. This is dummy text about the author.
