@@ -145,7 +145,7 @@
 .dropdown-links {
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 3.6rem;
 }
 
 .dropdown.active + .main-nav-link,
@@ -203,6 +203,28 @@
     padding-top: 0;
     padding-bottom: 0;
     box-shadow: 0 1.2rem 3.2rem (0, 0, 0, 0.03);
+}
+
+/* ******************************** */
+/* MOBILE NAVIGATION */
+/* ******************************** */
+
+.btn-mobile-nav {
+    border: none;
+    background-color: none;
+    cursor: pointer;
+
+    display: none;
+}
+
+.icon-mobile-nav {
+    height: 4.8rem;
+    width: 4.8rem;
+    color: #fff;;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+    display: none;
 }
 
 /* ******************************** */
@@ -396,6 +418,7 @@
     list-style: none;
     display: flex;
     justify-content: space-between;
+    padding-right: 5.4rem;
     gap: 2.4rem;
     margin: 2rem 0;
 }
