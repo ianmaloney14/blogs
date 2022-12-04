@@ -120,18 +120,26 @@
     }
 
     .grid--footer {
-        grid-template-columns: repeat(3, 1fr) !important;
+        grid-template-columns: repeat(4, 1fr) !important;
     }
 
     .logo-col {
         grid-row: 1;
-        grid-column: span 3;
+        grid-column: span 4;
     }
 
     .nav-col,
     .useful-links-col {
         grid-row: 2;
-        grid-column: span 1.5;
+        grid-column: span 2;
+    }
+
+    .nav-col {
+        grid-column: 2;
+    }
+
+    .useful-links-col {
+        grid-column: 3;
     }
 
     .footer-terms-links {
