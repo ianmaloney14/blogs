@@ -119,9 +119,9 @@
 }
 
 .dropdown-menu {
+    /* width: 100vw; */
     width: max-content;
     position: absolute;
-    /* left: 0; */
     right: 0;
     top: calc(100% + 1.4rem);
     background-color: #fff;
@@ -215,10 +215,11 @@
 
 .btn-mobile-nav {
     border: none;
-    background-color: none;
+    background-color: #141a1f;
     cursor: pointer;
 
     display: none;
+    z-index: 9999;
 }
 
 .icon-mobile-nav {

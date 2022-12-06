@@ -7,7 +7,7 @@ yearEl.textContent = currentYear;
 // NAV DROPDOWN
 
 document.addEventListener('click', e => {
-    const isDropdownButton = e.target.matches("[data-dropdown-button]")
+    const isDropdownButton = e.target.matches('[data-dropdown-button]')
     if (!isDropdownButton && e.target.closest('[data-dropdown]') != null) return
 
     let currentDropdown
@@ -22,6 +22,16 @@ document.addEventListener('click', e => {
     })
 })
 
+// MOBILE NAV
+
+const btnNavEl = document.querySelector('.btn-mobile-nav')
+const headerEl = document.querySelector('.header')
+
+btnNavEl.addEventListener('click', function() {
+    headerEl.classList.toggle('nav-open')
+})
+
 // COLOR CODE CATEGORIES
 
-// MOBILE NAV
+
+
