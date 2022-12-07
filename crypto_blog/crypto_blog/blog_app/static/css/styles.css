@@ -34,8 +34,8 @@
 /* ******************************** */
 
 .main-nav {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
     background-color: #141a1f;
 }
 
