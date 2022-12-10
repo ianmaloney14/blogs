@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<section class="section-add-post">
+    <div class="container">
+        <h1 class="heading-primary font--grey">Add Blog Post</h1>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="btn">Create</button>
+        </form>
+    </div>
+</section>
+{% endblock %}

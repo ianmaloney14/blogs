@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, DetailView, CreateView
 from .models import Post
 
 class HomeView(ListView):
@@ -18,3 +18,8 @@ class AllArticles(ListView):
     model = Post
     template_name = 'all_articles.html'
     ordering = ['-created_at']
+
+class AddPostView(CreateView):
+    model = Post
+    template_name = 'create_article.html'
+    fields = '__all__'
