@@ -19,7 +19,7 @@
 </head>
 <body>
     <header class="header">
-        <a href="#">{% load static %}<img class="logo" src="{% static "img/cryptoverse_test_logo.png" %}" alt="image not found"></a>
+        <a href="{% url 'home' %}">{% load static %}<img class="logo" src="{% static "img/cryptoverse_test_logo.png" %}" alt="image not found"></a>
 
         <input type="checkbox" id="menu-bar">
         <label for="menu-bar"><ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon></label>
@@ -47,7 +47,7 @@
                         <li><a href="#">Ethereum Casinos</a></li>
                     </ul>
                 </li>
-                <li id="main-nav-btn"><a class="btn-cta" href="#">Crypto Tools</a></li>
+                <li id="main-nav-btn"><a class="btn-cta" href="{% url 'all-articles' %}">All Articles</a></li>
             </ul>
         </nav>
     </header>

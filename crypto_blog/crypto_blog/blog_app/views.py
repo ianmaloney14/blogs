@@ -14,3 +14,7 @@ class ArticleDetailView(DetailView):
     template_name = 'article_details.html'
 
 
+class AllArticles(ListView):
+    model = Post
+    template_name = 'all_articles.html'
+    ordering = ['-created_at']

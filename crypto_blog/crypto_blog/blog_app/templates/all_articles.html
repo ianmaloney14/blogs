@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<section class="section-post">
+    <div class="container">
+        <h2 class="heading-secondary font--grey heading-latest-posts">
+            All Articles
+        </h2>
+    </div>
+    <div class="container grid grid--3-cols">
+        {% for post in object_list %}
+                <div class="post">
+                {% if post.thumbnail %}
+                    {% load static %}<img class="post-img" src="{{ post.thumbnail.url }}" alt="article thumbnail">
+                {% else %}
+                    {% load static %}<img class="post-img" src="src="{% static "img/image-not-found-scaled.png" %}" alt="image not found">
+                {% endif %}
+                    <div class="post-content">
+                        <div class="post-tags">
+                            <span class="tag tag--gamble">{{ post.category }}</span>
+                        </div>
+                        <p class="post-title"><a class="post-title-link" href="{% url 'article-detail' post.pk %}">{{ post.title }}</a></p>
+                        <ul class="post-attributes">
+                            <li class="post-attribute">{{ post.description|slice:":200"|safe}}</li>
+                        </ul>
+                    </div>
+                </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}
