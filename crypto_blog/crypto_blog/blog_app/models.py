@@ -13,7 +13,7 @@ class Post(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now_add=True)
     category = models.CharField(max_length=255, default="education")
-    thumbnail = models.ImageField(null=True, blank=True, upload_to="images/")
+    thumbnail = models.ImageField(null=True, blank=True, upload_to="images/", default='images/crypto_test_image.jpeg')
 
     def __str__(self):
         return self.title + ' | ' + str(self.author)
