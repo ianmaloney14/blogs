@@ -2,13 +2,14 @@
 
 {% block content %}
 
-<h1>Posts</h1>
-    <ul>
-    {% for post in object_list %}
-        <li><a href="{% url 'article-details' post.pk %}">{{ post.title }}</a> - {{ post.author.first_name }} {{ post.author.last_name }}<br/>
-        {{ post.body }}</li>
-    {% endfor %}
-    </ul>
-
-
+<section class="section-post">
+    <div class="container">
+        <ul>
+            {% for post in object_list %}
+                <li><a href="{% url 'article-details' post.pk %}">{{ post.title }}</a> - {{ post.author.first_name }} {{ post.author.last_name }}<br/>
+                {{ post.body }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
 {% endblock %}
