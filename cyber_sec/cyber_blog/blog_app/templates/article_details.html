@@ -2,11 +2,16 @@
 
 {% block content %}
 
-<h1>{{ post.title }}</h1>
-<small>by: {{ post.author.first_name }} {{ post.author.last_name }}</small><br/>
-<hr>
-<p>{{ post.body }}</p>
+<section class="section-article">
+    <div class="container">
+        <div class="article-content-container">
+            <h1 class="heading-primary font--grey">{{ post.title }}</h1>
+            <h3 class="heading-secondary font--grey">{{ post.title_tag }}</h3>
+            <p class="article-content">{{ post.body|safe }}</p>
+        </div>
+    </div>
+    <a href="{% url 'home' %}">Back</a>
+</section>
 
-<a href="{% url 'home' %}">Back</a>
 
 {% endblock %}

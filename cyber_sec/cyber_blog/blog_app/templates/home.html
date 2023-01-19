@@ -4,12 +4,29 @@
 
 <section class="section-post">
     <div class="container">
-        <ul>
-            {% for post in object_list %}
-                <li><a href="{% url 'article-details' post.pk %}">{{ post.title }}</a> - {{ post.author.first_name }} {{ post.author.last_name }}<br/>
-                {{ post.body }}</li>
-            {% endfor %}
-        </ul>
+        <h2 class="heading-secondary font--grey heading-latest-posts">
+            Latest Posts
+        </h2>
+    </div>
+    <div class="container grid grid--2-cols">
+        {% for post in object_list|slice:":2" %}
+                <div class="post">
+                {% if post.thumbnail %}
+                    {% load static %}<img class="post-img" src="{{ post.thumbnail.url }}" alt="article thumbnail">
+                {% else %}
+                    {% load static %}<img class="post-img" src="src="{% static "img/image-not-found-scaled.png" %}" alt="image not found">
+                {% endif %}
+                    <div class="post-content">
+                        <div class="post-tags">
+                            <span class="tag tag--gamble">{{ post.category }}</span>
+                        </div>
+                        <p class="post-title"><a class="post-title-link" href="{% url 'article-details' post.pk %}">{{ post.title }}</a></p>
+                        <ul class="post-attributes">
+                            <li class="post-attribute">{{ post.description|slice:":200"|safe}}</li>
+                        </ul>
+                    </div>
+                </div>
+        {% endfor %}
     </div>
 </section>
 {% endblock %}
