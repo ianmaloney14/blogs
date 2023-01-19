@@ -37,3 +37,30 @@ header .navbar ul li a {
 .nav-header-link h1 {
     font-size: 3.2rem;
 }
+
+/* ******************************** */
+/* ABOUT/CONTACT SECTION */
+/* ******************************** */
+
+.section-about {
+    text-align: center;
+}
+
+.section-contact {
+    text-align: center;
+}
+
+
+/* ******************************** */
+/* FOOTER */
+/* ******************************** */
+
+.footer {
+    width: 100%;
+}
+
+.footer-navbar p {
+    text-align: center;
+}
+
+
