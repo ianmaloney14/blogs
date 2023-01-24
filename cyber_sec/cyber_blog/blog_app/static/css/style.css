@@ -37,6 +37,7 @@ header .navbar ul li a {
 
 .nav-header-link a {
     text-decoration: none;
+    color: #1f2f3c;
 }
 
 .nav-header-link h1 {
@@ -166,7 +167,7 @@ header .navbar ul li a {
 .article-paragraphs {
     font-size: 1.8rem;
     line-height: 1.8;
-    color: #141a1f;
+    color: #666;
     margin-bottom: 15px;
 }
 
@@ -201,11 +202,23 @@ header .navbar ul li a {
     width: 100%;
     padding-top: 1.2rem;
     padding-bottom: 1.2rem;
-    background-color: #ddd;
+    background-color: #eee;
 }
 
 .footer-navbar p {
     text-align: center;
+}
+
+.social-icons {
+    color: #333;
+    margin-right: 1.2rem;
+}
+
+.footer-contact p a {
+    text-decoration: none;
+    color: #1f2f3c;
+    margin-right: 7px;
+    font-size: 1.4rem;
 }
 
 

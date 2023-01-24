@@ -3,14 +3,14 @@
 {% block content %}
 
 <section class="section-article">
-    <div class="container">
+    <div class="container--2">
         <div class="article-content-container">
-            <h1 class="heading-primary font--grey">{{ post.title }}</h1>
-            <h3 class="heading-secondary font--grey">{{ post.title_tag }}</h3>
-            <p class="article-content">{{ post.body|safe }}</p>
+            <h1 class="box-text--title">{{ post.title }}</h1>
+            <div>
+                <p class="article-content">{{ post.body|safe }}</p>
+            </div>
         </div>
     </div>
-    <a href="{% url 'home' %}">Back</a>
 </section>
 
 
