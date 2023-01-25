@@ -1,11 +1,11 @@
 from django.shortcuts import render
 from django.views.generic import ListView, DetailView, CreateView
 from .models import Post
+from django.core.paginator import Paginator, EmptyPage
 
 class HomeView(ListView):
     model = Post
     template_name = 'home.html'
-    # ordering = ['-id']
     ordering = ['-created_at']
 
 

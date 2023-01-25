@@ -2,6 +2,12 @@
 /* NAVIGATION */
 /* ******************************** */
 
+header {
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -181,8 +187,58 @@ header .navbar ul li a {
 /* ABOUT/CONTACT SECTION */
 /* ******************************** */
 
+.content-primary hr {
+    color: #666;
+    margin-top: 1.2rem;
+}
 
+.about-hero-section {
+    background-image: linear-gradient(115deg,rgba(0,0,0,0.73) 0%,rgba(0,0,0,0.33) 56%),url(https://cybercademy.org/wp-content/uploads/2020/04/bandwidth-close-up-computer-connection-1148820.jpg)!important;;
+    padding: 9.6rem 0;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+.about-hero-text {
+    text-align: center;
+}
+
+.about-text--title {
+    padding: 4rem 2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 4.2rem;
+    color: #fff;
+    line-height: 1;
+}
+
+.profile {
+    margin-top: 4.8rem;
+}
+
+.contact-content {
+}
+
+.heading--text {
+    font-size: 2.8rem;
+    font-weight: 500;
+    margin-top: 2.4rem;
+}
+
+.subheading--text {
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-top: 2.4rem;
+}
+
+.paragraph--text {
+    font-size: 1.8rem;
+    margin-top: 1.2rem;
+    color: #666;
+    line-height: 1.5;
+}
 
 /* .section-about {
     text-align: center;
@@ -203,6 +259,7 @@ header .navbar ul li a {
     padding-top: 1.2rem;
     padding-bottom: 1.2rem;
     background-color: #eee;
+    margin-top: 5.2rem;
 }
 
 .footer-navbar p {
