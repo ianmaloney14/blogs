@@ -182,6 +182,49 @@ header .navbar ul li a {
     margin-bottom: 1.8rem;
 }
 
+/* ******************************** */
+/* PAGINATION */
+/* ******************************** */
+
+.pagination-nav {
+    max-width: 120rem;
+    padding: 3.2rem;
+    margin: 0 auto;
+}
+
+.pagination {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-item {
+    border-top: 1px solid #141a1f;
+    border-bottom: 1px solid #141a1f;
+    border-left: 1px solid #141a1f;
+    padding: 1.2rem;
+}
+
+.page-link {
+
+}
+
+.page-btn {
+    border-top: 1px solid #141a1f;
+    border-bottom: 1px solid #141a1f;
+    border-left: 1px solid #141a1f;
+    padding: 1.2rem;
+}
+
+.page-btn:last-child {
+    border-right: 1px solid #141a1f;
+}
+
+.page-counter {
+    text-align: center;
+}
+
 
 /* ******************************** */
 /* ABOUT/CONTACT SECTION */
