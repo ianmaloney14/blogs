@@ -200,29 +200,31 @@ header .navbar ul li a {
 }
 
 .page-item {
-    border-top: 1px solid #141a1f;
-    border-bottom: 1px solid #141a1f;
-    border-left: 1px solid #141a1f;
     padding: 1.2rem;
 }
 
 .page-link {
-
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #1f2f3c;
 }
 
 .page-btn {
-    border-top: 1px solid #141a1f;
-    border-bottom: 1px solid #141a1f;
-    border-left: 1px solid #141a1f;
     padding: 1.2rem;
-}
 
-.page-btn:last-child {
-    border-right: 1px solid #141a1f;
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #1f2f3c;
 }
 
 .page-counter {
     text-align: center;
+}
+
+.active {
+    text-decoration: underline;
+    font-size: 1.8rem;
+    color: #1f2f3c;
 }
 
 
