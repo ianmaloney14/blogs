@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import ListView, DetailView, TemplateView
+from django.views.generic import ListView, DetailView, TemplateView, CreateView
 from .models import Post
 from django.core.paginator import Paginator
 
@@ -14,3 +14,8 @@ class ArticleDetailView(DetailView):
 
 class AboutView(TemplateView):
     template_name = 'about.html'
+
+class AddPostView(CreateView):
+    model = Post
+    template_name = 'add_post.html'
+    fields = '__all__'
