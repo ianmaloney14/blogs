@@ -25,6 +25,10 @@ body {
     background-color: #fff;
 }
 
+hr {
+    margin: 0 !important;
+}
+
 /* ******************************** */
 /* GENERAL COMPONENTS */
 /* ******************************** */
