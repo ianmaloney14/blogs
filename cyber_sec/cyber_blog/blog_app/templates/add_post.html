@@ -2,6 +2,7 @@
 {% block title %}Create a new Blog Post{% endblock %}
 
 {% block content %}
+{% if user.is_authenticated %}
 <div class="container">
     <h1 class="heading-secondary font--grey">Add Post</h1>
     <form method="POST" class="form">
@@ -10,6 +11,12 @@
         <button class="button">Post</button>
     </form>
 </div>
+
+{% else %}
+
+You are not allowed here.
+
+{% endif %}
 
 
 {% endblock %}
