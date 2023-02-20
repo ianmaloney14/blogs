@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import ListView, DetailView, TemplateView, CreateView
 from .models import Post
+from .forms import PostForm
 from django.core.paginator import Paginator
 
 class HomeView(ListView):
@@ -17,5 +18,6 @@ class AboutView(TemplateView):
 
 class AddPostView(CreateView):
     model = Post
+    form_class = PostForm
     template_name = 'add_post.html'
-    fields = '__all__'
+    # fields = '__all__'
