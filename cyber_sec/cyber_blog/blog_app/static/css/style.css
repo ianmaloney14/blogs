@@ -141,6 +141,7 @@ header .navbar ul li a {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    padding-left: 0 !important;
 }
 
 .post-attribute {
