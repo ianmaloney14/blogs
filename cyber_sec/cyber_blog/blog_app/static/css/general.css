@@ -51,6 +51,13 @@ hr {
     margin: 0 auto;
 }
 
+.flex--center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+
 .grid {
     display: grid;
     column-gap: 6.4rem;
@@ -76,6 +83,40 @@ hr {
 
 .grid--5-cols {
     grid-template-columns: repeat(5, 1fr);
+}
+
+.button {
+    padding: 1.2rem 2.4rem;
+    border: none;
+    border-radius: 9px;
+    color: #fff;
+    cursor: pointer;
+    transition: 500ms;
+    background-image: linear-gradient(to right, #1864ab 0%, #228be6 51%, #1864ab 100%);
+    background-size: 200% auto;
+    text-decoration: none;
+}
+
+.button:hover,
+.button:active {
+    background-position: right center;
+}
+
+.button--red {
+    padding: 1.2rem 2.4rem;
+    border: none;
+    border-radius: 9px;
+    color: #fff;
+    cursor: pointer;
+    transition: 500ms;
+    background-image: linear-gradient(to right, #ab183d 0%, #e62239 51%, #ab183d 100%);
+    background-size: 200% auto;
+    text-decoration: none;
+}
+
+.button--red:hover,
+.button--red:active {
+    background-position: right center;
 }
 
 
@@ -139,8 +180,12 @@ hr {
     color: #333;
 }
 
-.font--white{
+.font--white {
     color: #fff;
+}
+
+.font--bold {
+    font-weight: 700;
 }
 
 .line-break {
@@ -159,23 +204,22 @@ hr {
     height: 2.2rem;
 }
 
-.button {
-    padding: 1.2rem 2.4rem;
-    border: none;
-    border-radius: 9px;
-    color: #fff;
-    cursor: pointer;
-    transition: 500ms;
-    background-image: linear-gradient(to right, #1864ab 0%, #228be6 51%, #1864ab 100%);
-    background-size: 200% auto;
-}
-
-.button:hover,
-.button:active {
-    background-position: right center;
-}
 
 .form p {
     margin-bottom: 1.2rem;
     font-size: 1.8rem;
+}
+
+.code-snippet {
+    background-color: #f8f9fd;
+    padding: 2.4rem 3.2rem;
+    border: 1px solid #e6e8f1;
+}
+
+.post-img--full {
+
+}
+
+.post-img--half {
+
 }

@@ -11,10 +11,12 @@
                 <p class="article-content">{{ post.body|safe }}</p>
             </div>
         </div>
-        {% if user.is_authenticated %}
-        <a href="{% url 'update-post' post.pk %}" class="button">Edit</a>
-        <a href="{% url 'delete-post' post.pk %}" class="button">Delete</a>
-        {% endif %}
+        <div class="flex--center">
+            {% if user.is_authenticated %}
+            <a href="{% url 'update-post' post.pk %}" class="button">Edit</a>
+            <a href="{% url 'delete-post' post.pk %}" class="button--red">Delete</a>
+            {% endif %}
+        </div>
     </div>
 </section>
 
