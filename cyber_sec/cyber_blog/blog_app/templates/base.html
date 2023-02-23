@@ -45,7 +45,7 @@
         <hr>
         </div>
         <div class="--">
-            <main class="main-container">
+            <main class="wrapper">
                 {% block content %}
                 {% endblock %}
             </main>
@@ -62,11 +62,9 @@
                     </div>
                     <div class="footer-contact line-break">
                         <p>
-                            <a href="{% url 'about' %}">Send a tip</a>
                             <a href="{% url 'about' %}">Contact</a>
-                            <a href="{% url 'about' %}">About</a>
-                            <a href="{% url 'privacy' %}">Privacy</a>
                             <a href="{% url 'terms' %}">Terms & Conditions</a>
+                            <a href="{% url 'privacy' %}">Privacy</a>
                         </p>
                     </div>
                 </nav>
