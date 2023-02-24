@@ -138,6 +138,7 @@ hr {
     color: #fff;
     margin-bottom: 3.2rem;
     line-height: 1;
+    border-radius: 9px;
 }
 
 .box-text--subheading {
@@ -152,6 +153,7 @@ hr {
     line-height: 1;
     border-left: 7px solid #1864ab;
     border-right: 7px solid #1864ab;
+    border-radius: 9px;
 }
 
 .heading-primary {
@@ -215,9 +217,10 @@ hr {
 }
 
 .code-snippet {
-    background-color: #f8f9fd;
-    padding: 2.4rem 3.2rem;
+    background-color: #232527;
+    padding: 1.8rem 2.4rem;
     border: 1px solid #e6e8f1;
+    border-radius: 9px;
 }
 
 .post-img--full {

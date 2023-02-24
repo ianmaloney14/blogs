@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if category_posts %}
+<h1>{{ cats }}</h1>
+<div class="container grid grid--2-cols">
+    <ul>
+    {% for post in category_posts %}
+    <div class="post">
+        {% if post.thumbnail %}
+            {% load static %}<img class="post-img" src="{{ post.thumbnail.url }}" alt="article thumbnail">
+        {% else %}
+            {% load static %}<img class="post-img" src="src="{% static "img/image-not-found-scaled.png" %}" alt="image not found">
+        {% endif %}
+            <div class="post-content">
+                <div class="post-tags">
+                    <span class="tag tag--gamble">{{ post.category }}</span>
+                </div>
+                <p class="post-title"><a class="post-title-link" href="{% url 'article-details' post.pk %}">{{ post.title }}</a></p>
+                <ul class="post-attributes">
+                    <li class="post-attribute">{{ post.description|slice:":200"|safe}}</li>
+                </ul>
+            </div>
+    </div>
+
+    {% endfor %}
+    <br>
+    </ul>
+</div>
+
+{% else %}
+
+<h2>Sorry this category doesn't exist...</h2>
+
+{% endif %}
+
+{% endblock %}
