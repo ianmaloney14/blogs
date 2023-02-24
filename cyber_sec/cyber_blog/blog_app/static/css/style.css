@@ -84,6 +84,7 @@ header .navbar ul li a {
     color: #fff;
     border-radius: 9px;
     font-weight: 600;
+    text-decoration: none;
 }
 
 .tag--education {

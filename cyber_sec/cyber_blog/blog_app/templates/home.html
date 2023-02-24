@@ -18,7 +18,7 @@
                 {% endif %}
                     <div class="post-content">
                         <div class="post-tags">
-                            <span class="tag tag--gamble"><a href="{% url 'category' post.category %}">{{ post.category }}</a></span>
+                            <span><a class="tag tag--gamble" href="{% url 'category' post.category|slugify %}">{{ post.category }}</a></span>
                         </div>
                         <p class="post-title"><a class="post-title-link" href="{% url 'article-details' post.pk %}">{{ post.title }}</a></p>
                         <ul class="post-attributes">
