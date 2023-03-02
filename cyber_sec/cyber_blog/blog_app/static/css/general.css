@@ -173,9 +173,23 @@ hr {
     margin-bottom: 5.4rem;
 }
 
+.heading-h1 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: #333;
+}
+
 .heading-h4 {
     font-size: 1.8rem;
     color: #141a1f;
+}
+
+.margin-top-sm {
+    margin-top: 2.4rem;
+}
+
+.margin-bottom-sm {
+    margin-bottom: 2.4rem;
 }
 
 .margin-right-sm {
