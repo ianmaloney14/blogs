@@ -224,11 +224,11 @@ hr {
 }
 
 .post-img--full {
-    width: 5.2rem;
-    height: 4.8rem;
+    width: 100%;
+    margin-bottom: 2.4rem;
 }
 
 .post-img--half {
-    width: 5.2rem;
-    height: 4.8rem;
+    width: 100%;
+    margin-bottom: 2.4rem;
 }
