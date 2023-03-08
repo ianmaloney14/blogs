@@ -35,6 +35,10 @@ header .navbar ul li a {
     font-weight: 700;
     font-size: 4.8rem;
 }
+.main-nav-links:hover,
+.main-nav-links:active {
+    color: #228be6;
+}
 
 .navbar {
     margin-top: 1.2rem;
@@ -219,6 +223,11 @@ header .navbar ul li a {
     color: #1f2f3c;
 }
 
+.page-btn:hover,
+.page-btn:active {
+    color: #228be6;
+}
+
 .page-counter {
     text-align: center;
 }
@@ -323,6 +332,15 @@ header .navbar ul li a {
     color: #1f2f3c;
     margin-right: 7px;
     font-size: 1.4rem;
+}
+
+.footer-nav-links {
+    /* font-weight: 700;
+    font-size: 4.8rem; */
+}
+.footer-nav-links:hover,
+.footer-nav-links:active {
+    color: #228be6;
 }
 
 
