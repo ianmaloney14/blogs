@@ -3,14 +3,21 @@
 
 {% block content %}
 {% if user.is_authenticated %}
-<div class="container">
-    <h1 class="heading-secondary font--grey">Add Post</h1>
+<div class="container--2">
+    <h1 class="heading-secondary font--grey margin-top-sm">Add Post</h1>
     <form method="POST" class="form">
         {% csrf_token %}
+        {{ form.media }}
         {{ form.as_p }}
         <button class="button">Post</button>
     </form>
 </div>
+<script>
+    var name = "{{ user.id }}";
+    document.getElementById("user").value = name;
+
+
+</script>
 
 {% else %}
 
