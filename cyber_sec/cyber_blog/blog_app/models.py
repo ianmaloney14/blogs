@@ -4,6 +4,7 @@ from django.urls import reverse
 
 class Category(models.Model):
     name = models.CharField(max_length=255)
+    thumbnail = models.ImageField(null=True, blank=True, upload_to="images/", default='images/img-not-found.png')
     
     def __str__(self):
         return self.name

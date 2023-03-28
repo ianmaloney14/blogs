@@ -1,15 +1,14 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
 <section class="section-post">
-    <div class="container">
+    <div class="container--2">
         <h2 class="heading-secondary font--grey heading-latest-posts">
             Latest Posts
         </h2>
     </div>
-    <div class="container grid grid--2-cols">
-        {% for post in object_list|slice:":2" %}
+    <div class="container--2 grid grid--2-cols">
+        {% for post in object_list|slice:":4" %}
                 <div class="post">
                 {% if post.thumbnail %}
                     {% load static %}<img class="post-img" src="{{ post.thumbnail.url }}" alt="article thumbnail">
@@ -28,29 +27,7 @@
                 </div>
         {% endfor %}
         <br>
-        <!-- <div class="pagination">
-            <div class="page-counter">
-                Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
-            </div>
-            <div class="page-nav">
-                <ul>
-                    {% if page_obj.has_previous %}
-                        <li><a href="?page=1">first</a></li>
-                        <li><a href="?page={{ page_obj.previous_page_number }}">prev</a></li>
-                    {% endif %}
-                    
-                    <div>
-                        {{ page_obj.number }} 
-                    </div>
-
-                    {% if page_obj.has_next %}
-                        <li><a href="?page={{ page_obj.next_page_number}}">next</a></li>
-                        <li><a href="?page={{ page_obj.paginator.num_pages }}">last</a></li>
-                    {% endif %}
-                </ul>
-            </div>
-        </div> -->
-        <!-- Pagination -->
+    <!-- Pagination -->
     </div>
         <nav class="pagination-nav">
             {% if page_obj.has_other_pages %}
@@ -81,4 +58,5 @@
             {% endif %}
         </nav>
 </section>
+
 {% endblock %}

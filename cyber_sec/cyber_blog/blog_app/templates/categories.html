@@ -3,9 +3,10 @@
 {% block content %}
 
 {% if category_posts %}
-<h1>{{ cats }}</h1>
-<div class="container grid grid--2-cols">
-    <ul>
+<div class="container--2">
+    <h1 class="heading-secondary font--grey margin-top-sm">{{ cats }}</h1>
+</div>
+<div class="container--2 grid grid--2-cols">
     {% for post in category_posts %}
     <div class="post">
         {% if post.thumbnail %}
@@ -26,7 +27,6 @@
 
     {% endfor %}
     <br>
-    </ul>
 </div>
 
 {% else %}

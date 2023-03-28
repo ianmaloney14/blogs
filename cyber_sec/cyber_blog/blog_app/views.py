@@ -8,7 +8,7 @@ from django.core.paginator import Paginator
 class HomeView(ListView):
     model = Post
     template_name = 'home.html'
-    paginate_by = 2
+    paginate_by = 4
 
 class ArticleDetailView(DetailView):
     model = Post
@@ -22,6 +22,10 @@ class AddPostView(CreateView):
     form_class = PostForm
     template_name = 'add_post.html'
     # fields = '__all__'
+
+class CategoryListView(ListView):
+    model = Category
+    template_name = 'categories_list.html'
 
 def CategoryView(request, cats):
     category_posts = Post.objects.filter(category=cats.replace('-', ' '))

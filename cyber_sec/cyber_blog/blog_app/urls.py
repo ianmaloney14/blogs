@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import HomeView, ArticleDetailView, TemplateView, AddPostView, UpdatePostView, DeletePostView, AddCategoryView, CategoryView
+from .views import HomeView, ArticleDetailView, TemplateView, AddPostView, UpdatePostView, DeletePostView, AddCategoryView, CategoryView, CategoryListView
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
@@ -12,7 +12,8 @@ urlpatterns = [
     path('add-category/', AddCategoryView.as_view(), name="add-category"),
     path('article/edit/<int:pk>', UpdatePostView.as_view(), name="update-post"),
     path('article/<int:pk>/delete', DeletePostView.as_view(), name="delete-post"),
-    path('category/<str:cats>/', CategoryView, name='category')
+    path('category/<str:cats>/', CategoryView, name='category'),
+    path('categories/', CategoryListView.as_view(), name='categories'),
     # path('all-articles', AllArticles.as_view(), name="all-articles"),
 ]
 

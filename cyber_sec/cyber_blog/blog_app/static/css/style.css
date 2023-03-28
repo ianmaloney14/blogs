@@ -304,6 +304,26 @@ header .navbar ul li a {
     text-align: center;
 } */
 
+/* ******************************** */
+/* CATEGORIES */
+/* ******************************** */
+
+.category-box {
+    padding-top: 5.2rem;
+    padding-bottom: 5.2rem;
+    border-radius: 5px 5px 5px 5px;
+    overflow: hidden;
+
+}
+
+.category-links {
+    text-decoration: none;
+}
+
+.category-img {
+    width: 100%;
+}
+
 
 /* ******************************** */
 /* FOOTER */
