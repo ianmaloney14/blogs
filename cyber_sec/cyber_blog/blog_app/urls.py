@@ -1,9 +1,10 @@
 from django.urls import path
-from .views import HomeView, ArticleDetailView, TemplateView, AddPostView, UpdatePostView, DeletePostView, AddCategoryView, CategoryView, CategoryListView
+from .views import HomeView, ArticleDetailView, TemplateView, AddPostView, UpdatePostView, DeletePostView, AddCategoryView, CategoryView, CategoryListView, PortfolioView
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
-    path('', HomeView.as_view(), name="home"),
+    path('', PortfolioView.as_view(), name="portfolio"),
+    path('blog', HomeView.as_view(), name="home"),
     path('article/<int:pk>', ArticleDetailView.as_view(), name="article-details"),
     path('about/', TemplateView.as_view(template_name="about.html"), name="about"),
     path('terms/', TemplateView.as_view(template_name="terms.html"), name="terms"),

@@ -5,6 +5,10 @@ from .forms import PostForm
 from django.urls import reverse_lazy
 from django.core.paginator import Paginator
 
+class PortfolioView(ListView):
+    model = Post
+    template_name = 'portfolio.html'
+
 class HomeView(ListView):
     model = Post
     template_name = 'home.html'

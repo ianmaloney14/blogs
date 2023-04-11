@@ -47,7 +47,8 @@ header .navbar ul li a {
 
 .nav-header-link a {
     text-decoration: none;
-    color: #1f2f3c;
+    color: #333;
+    font-weight: 900;
 }
 
 .nav-header-link h1 {
