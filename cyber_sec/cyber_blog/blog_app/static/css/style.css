@@ -55,6 +55,24 @@ header .navbar ul li a {
     font-size: 3.2rem;
 }
 
+/* ******************************** */
+/* PORTFOLIO PAGE */
+/* ******************************** */
+
+
+.acomplishments {
+    background-color: #1f2f3c;
+    border-radius: 9px;
+    height: 100%;
+    width: 50%;
+    padding: 2.4rem;
+}
+
+
+
+
+
+
 
 /* ******************************** */
 /* POST SECTION */
@@ -312,8 +330,14 @@ header .navbar ul li a {
 .category-box {
     padding-top: 5.2rem;
     padding-bottom: 5.2rem;
-    border-radius: 5px 5px 5px 5px;
+    border-radius: 9px;
     overflow: hidden;
+    background-image: url(http://drive.google.com/uc?export=view&id=1IZNtmfxHQkV7dM6A37oMDjGHCass6ncv);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.category-box:hover{
 
 }
 
@@ -323,6 +347,7 @@ header .navbar ul li a {
 
 .category-img {
     width: 100%;
+    border-radius: 9px;
 }
 
 

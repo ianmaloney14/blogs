@@ -3,26 +3,68 @@
 {% block content %}
 <section class="section-post">
     <div class="container--2">
-        <h2 class="heading-secondary font--grey heading-latest-posts">
+        <h2 class="heading-secondary font--grey heading-latest-posts margin-bottom-sm">
             Hello, I'm Ian!
         </h2>
-        <p>
-            I am a full-stack developer and cybersecurity enthusiast...
+        <p class="article-paragraphs">
+            An aspiring cybersecurity professional with a passion for protecting digital assets. With a focus on cybersecurity, 
+            I am dedicated to developing expertise in threat analysis, risk management, and security solutions. 
+            I am currently studying programming languages, operating systems, network protocols, and cybersecurity frameworks to gain a strong foundation in the field. 
+            With a commitment to staying up-to-date with the latest trends and techniques in cybersecurity, I am determined to provide innovative solutions that ensure the safety and security of digital assets for clients and users.
         </p>
 
-        <h2 class="heading-secondary font--grey">Projects</h2>
+        <h2 class="heading-secondary font--grey margin-bottom-sm margin-top-sm">Projects</h2>
             <div class="container--3">
-                <p>Github Projects</p>
-                <p>Blog Projects</p>
+                <div>
+                    <p class="article-paragraphs">Github Projects:</p>
+                </div>
+                <div>
+                    <p class="article-paragraphs">You can find detailed articles on my projects below:</p>
+                    <a href="{% url 'home' %}" class="button article-paragraphs">Blog Projects</a>
+                </div>
             </div>
     
     
-        <h2 class="heading-secondary font--grey">Technologies</h2>
-        <p>I've worked with these technologies:</p>
+        <h2 class="heading-secondary font--grey margin-bottom-sm margin-top-sm">Technologies</h2>
+            <p class="article-paragraphs margin-bottom-sm">I've worked with these technologies:</p>
+            <div class="grid grid--3-cols">
+                <div>
+                    <h4 class="heading-h4">Front-End</h4>
+                    <p class="article-paragraphs">HTML5, CSS, JavaScript, React</p>
+                </div>
 
+                <div>
+                    <h4 class="heading-h4">Back-End</h4>
+                    <p class="article-paragraphs">Python, NodeJs, Express</p>
+                </div>
+
+                <div>
+                    <h4 class="heading-h4">Databases</h4>
+                    <p class="article-paragraphs">MySQL, SQLite3, MongoDB</p>
+                </div>
+
+                <div>
+                    <h4 class="heading-h4">Frameworks</h4>
+                    <p class="article-paragraphs">Flask, Django, React, Express</p>
+                </div>
+
+                <div>
+                    <h4 class="heading-h4">Operating Systems</h4>
+                    <p class="article-paragraphs">Windows, Windows Server 2019, MacOs, Ubuntu, Ubuntu Server, Kali Linux</p>
+                </div>
+
+                <div>
+                    <h4 class="heading-h4">Others</h4>
+                    <p class="article-paragraphs">Wireshark, Docker, Splunk, VirtualBox, VMware, Proxmox, Git</p>
+                </div>
+            </div>
     
-        <h2 class="heading-secondary font--grey"> Acomplishments</h2>
-        <p>CodingDojo: Full-Stack Web Developement</p>
+        <h2 class="heading-secondary font--grey margin-bottom-sm margin-top-sm">Acomplishments</h2>
+        <div class="acomplishments">
+            <h1 class="heading-h1 font--white">December 2022</h1>
+            <p class="article-paragraphs font--white">CodingDojo: Full-Stack Web Developement Bootcamp</p>
+            <a class="button article-paragraphs font--white" target="_blank" href="http://drive.google.com/uc?export=view&id=1aHpk_2PQud0YIZ-Epeqi8UHcTkrH1zYn">View Certificate</a>
+        </div>
     </div>
 
 </section>
