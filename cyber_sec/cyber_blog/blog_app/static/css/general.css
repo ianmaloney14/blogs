@@ -204,6 +204,10 @@ hr {
     color: #fff;
 }
 
+.font--blue {
+    color: #1864ab;
+}
+
 .font--bold {
     font-weight: 700;
 }

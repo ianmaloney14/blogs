@@ -2,6 +2,11 @@
 /* NAVIGATION */
 /* ******************************** */
 
+.nav-container {
+    background-color: #1f2f3c;
+    padding-top: 1.2rem;
+}
+
 header {
     max-width: 120rem;
     padding: 0 3.2rem;
@@ -12,6 +17,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 1.2rem;
 }
 
 header .navbar ul {
@@ -26,7 +32,7 @@ header .navbar ul li {
 header .navbar ul li a {
     font-size: 1.8rem;
     padding: 2.4rem;
-    color: #555;
+    color: #fff;
     display: block;
     text-decoration: none;
 }
@@ -38,11 +44,6 @@ header .navbar ul li a {
 .main-nav-links:hover,
 .main-nav-links:active {
     color: #228be6;
-}
-
-.navbar {
-    margin-top: 1.2rem;
-    margin-bottom: 1.2rem;
 }
 
 .nav-header-link a {
@@ -59,6 +60,11 @@ header .navbar ul li a {
 /* PORTFOLIO PAGE */
 /* ******************************** */
 
+
+.acomplishments-box {
+    display: flex;
+    gap: 1.2rem;
+}
 
 .acomplishments {
     background-color: #1f2f3c;
