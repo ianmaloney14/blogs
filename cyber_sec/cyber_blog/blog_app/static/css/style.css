@@ -333,12 +333,31 @@ header .navbar ul li a {
 /* CATEGORIES */
 /* ******************************** */
 
+.category-hero-section {
+    background-image: linear-gradient(115deg,rgba(0,0,0,0.73) 0%,rgba(0,0,0,0.33) 56%),url(https://cybercademy.org/wp-content/uploads/2020/04/bandwidth-close-up-computer-connection-1148820.jpg)!important;;
+    padding: 9.6rem 0;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.category-hero-text {
+    text-align: center;
+}
+
+.category-text--title {
+    padding: 4rem 2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 4.2rem;
+    color: #fff;
+    line-height: 1;
+}
+
 .category-box {
-    padding-top: 5.2rem;
-    padding-bottom: 5.2rem;
     border-radius: 9px;
     overflow: hidden;
-    background-image: url(http://drive.google.com/uc?export=view&id=1IZNtmfxHQkV7dM6A37oMDjGHCass6ncv);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -352,6 +371,7 @@ header .navbar ul li a {
 }
 
 .category-img {
+    height: 170px;
     width: 100%;
     border-radius: 9px;
 }

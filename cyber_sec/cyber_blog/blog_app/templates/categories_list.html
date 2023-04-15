@@ -1,17 +1,21 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<div class="category-hero-section margin-bottom-lrg">
+    <div class="category-hero-text">
+        <h1 class="category-text--title">All Categories</h1>
+    </div>
+</div>
 <div class="container--2">
-    <h1 class="heading-secondary font--grey margin-top-sm">All Categories</h1>
-    <div class="grid grid--3-cols">
+    <div class="grid grid--3-cols row-gap-sm">
         {% for category in object_list %}
         <div class="category-box">
-            <!-- {% if category.thumbnail %}
+            {% if category.thumbnail %}
                 {% load static %}<img class="category-img" src="{{ category.thumbnail.url }}" alt="category thumbnail">
             {% else %}
                 {% load static %}<img class="category-img" src="src="{% static "img/image-not-found-scaled.png" %}" alt="image not found">
-            {% endif %} -->
-            <a class="category-links heading--text font--white" href="{% url 'category' category|slugify %}">{{ category.name }}</br></a>
+            {% endif %}
+            <a class="category-links heading--text font--grey" href="{% url 'category' category|slugify %}">{{ category.name }}</br></a>
         </div>
         {% endfor %}
     </div>
