@@ -15,7 +15,9 @@
             {% else %}
                 {% load static %}<img class="category-img" src="src="{% static "img/image-not-found-scaled.png" %}" alt="image not found">
             {% endif %}
-            <a class="category-links heading--text font--grey" href="{% url 'category' category|slugify %}">{{ category.name }}</br></a>
+            <div class="category-link-box">
+                <a class="category-links heading--text font--white" href="{% url 'category' category|slugify %}">{{ category.name }} <span>></span></br></a>
+            </div>
         </div>
         {% endfor %}
     </div>

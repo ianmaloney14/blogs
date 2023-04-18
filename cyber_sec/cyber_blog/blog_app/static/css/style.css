@@ -362,18 +362,44 @@ header .navbar ul li a {
     background-repeat: no-repeat;
 }
 
-.category-box:hover{
-
+.category-link-box {
+    position: relative;
+    top: -50%;
+    z-index: 999;
 }
 
 .category-links {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
+    text-transform: uppercase;
+}
+
+.category-links span {
+    opacity: 0;
+}
+
+.category-links:hover span {
+    opacity: 1;
+    transition: 1s;
+}
+
+.category-links:hover,
+.category-links:active {
+    
 }
 
 .category-img {
+    filter: contrast(10%);
     height: 170px;
     width: 100%;
     border-radius: 9px;
+}
+
+.category-img:hover{
+    filter: contrast(50%);
 }
 
 
