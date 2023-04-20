@@ -402,6 +402,10 @@ header .navbar ul li a {
     filter: contrast(50%);
 }
 
+.category-img.hovered {
+    filter: contrast(50%);
+  }
+
 
 /* ******************************** */
 /* FOOTER */
