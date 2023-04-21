@@ -1,0 +1,24 @@
+
+/* ******************************** */
+/* BELOW 1300px (Smaller Desktops) */
+/* ******************************** */
+@media (max-width: 81.25em) {
+    .container {
+        max-width: 100rem;
+        padding: 0 3.2rem;
+        margin: 0 auto;
+    }
+
+    .container--2 {
+        max-width: 80rem;
+        padding: 0 3.2rem;
+        margin: 0 auto;
+    }
+    
+    .container--3 {
+        max-width: 75rem;
+        padding: 0 3.2rem;
+        margin: 0 auto;
+    }
+
+}
