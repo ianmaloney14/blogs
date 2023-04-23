@@ -136,6 +136,7 @@
 
     .btn-mobile-nav {
         display: block;
+        z-index: 9999;
     }
 
     .main-nav {
@@ -189,16 +190,29 @@
 /* BELOW 704px (Smaller Tablets) */
 /* ******************************** */
 @media (max-width: 44em) {
-
+    .grid--3-cols,
+    .grid--4-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 
-
-
-
 /* ******************************** */
-/* BELOW 704px (Phones) */
+/* BELOW 575px (Phones) */
 /* ******************************** */
-@media (max-width: 44em) {
+@media (max-width: 36em) {
+    .container {
+        padding-right: 3.2rem !important;
+        padding-left: 3.2rem !important;
+    }
+
+    .grid {
+        row-gap: 2.4rem;
+    }
     
+    .grid--2-cols,
+    .grid--3-cols,
+    .grid--4-cols {
+        grid-template-columns: 1fr;
+    }
 }

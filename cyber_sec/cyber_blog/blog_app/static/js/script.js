@@ -1,4 +1,4 @@
-
+////////////////////////////////////////////////////////////////////////////////
 // Hover effect for category_list page. 
 //This function will apply filter: contrast effect when hovering the category links
 function addHoverClass() {
@@ -15,3 +15,13 @@ function addHoverClass() {
     });
   }
   addHoverClass()
+////////////////////////////////////////////////////////////////////////////////
+// Make mobile nav work
+const btnNavEl = document.querySelector(".btn-mobile-nav")
+const headerEl = document.querySelector(".header")
+
+btnNavEl.addEventListener('click', function() {
+  headerEl.classList.toggle("nav-open")
+})
+
+////////////////////////////////////////////////////////////////////////////////
