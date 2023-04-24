@@ -195,6 +195,7 @@
 }
 
 .post-img {
+    
     width: 100%;
 }
 
@@ -280,8 +281,7 @@
 }
 
 .about-hero-section {
-    /* background-image: linear-gradient(115deg,rgba(0,0,0,0.73) 0%,rgba(0,0,0,0.33) 56%),url(https://cybercademy.org/wp-content/uploads/2020/04/bandwidth-close-up-computer-connection-1148820.jpg)!important;; */
-    background-image: linear-gradient(115deg,rgba(0,0,0,0.83) 0%,rgba(0,0,0,0.53) 56%), url(http://drive.google.com/uc?export=view&id=1Ki0eiml3jlsruNi5VPX7gSqSA03dHDz0);
+    background-image: linear-gradient(115deg,rgba(0,0,0,0.83) 0%,rgba(0,0,0,0.53) 56%), url(http://drive.google.com/uc?export=view&id=1LK29TY-46UXxdPV-WVVRzzaBpIdJSGWL);
     padding: 9.6rem 0;
     background-position: 50%;
     background-repeat: no-repeat;
