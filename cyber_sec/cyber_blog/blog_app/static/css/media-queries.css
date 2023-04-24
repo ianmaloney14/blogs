@@ -140,7 +140,9 @@
     }
 
     .main-nav {
-        background-color: rgba(50, 52, 55, 0.97);
+        background-color: rgba(50, 52, 55, 0.9);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
         position: absolute;
         top: 0;
         left: 0;
@@ -221,3 +223,40 @@
         font-size: 3.2rem;
     }
 }
+
+/* ******************************** */
+/* Fixing Safari Flexbox Gap */
+/* ******************************** */
+
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 4.8rem;
+  }
+
+  .no-flexbox-gap .acomplishments-box li:not(:last-child) {
+    margin-right: 1.2rem;
+  }
+
+  .no-flexbox-gap .post-tags li:not(:last-child) {
+    margin-right: 0.4rem;
+  }
+
+  .no-flexbox-gap .post-attributes li:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  .no-flexbox-gap .post-attribute li:not(:last-child) {
+    margin-right: 1.6rem;
+  }
+  
+  @media (max-width: 75em) {
+    .no-flexbox-gap .main-nav-list li:not(:last-child) {
+      margin-right: 3.2rem;
+    }
+  }
+  
+  @media (max-width: 59em) {
+    .no-flexbox-gap .main-nav-list li:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 4.8rem;
+    }
+  }
